@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-2 fixed-top">
+        <!-- <div class="container d-flex flex-row justify-content-between align-items-center"> -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="https://d1tgh8fmslzexmh.cloudfront.net/ccbp-responsive-website/navbar-logo-img.png"
+                    class="navbar-image"
+                    alt="img"
+                  />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav m-auto">
+                    <a class="nav-link active" href="#home">
+                      Home
+                    </a>
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#portfolio">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </div>
+                </div>
+              </nav>
+        <!-- </div> -->
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg-image"></div>
+            <div class="container d-flex flex-column justify-content-center align-items-center text-white" style="height: 100vh;">
+                <h2 class="display-4 text-center">Welcome to My Portfolio</h2>
+                <p class="lead text-center">Discover my work and projects.</p>
+                <a href="#portfolio" class="btn btn-outline-light">View Portfolio</a>
+            </div>
+        </section>
+
+        <section id="about" class="about bg-dark text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="display-5">About Me</h2>
+                        <p class="lead">I am Veda Sree, a second-year B.Tech student specializing in Information Technology at ITB. With a strong academic background, boasting a CGPA of 9.51 and SGPA of 9.61, I am passionate about leveraging technology to drive creative solutions. Currently, I serve as the Designing Lead at the Student Developers Community (SDC), where I apply my expertise to innovate and collaborate on impactful projects. I have honed my design skills through internships at GBT and extensive work with the NSS designing team over nearly two years. Projects like 'Project Bolt,' a comprehensive study website for MBA students, showcase my proficiency in Figma, Canva, and Photoshop, as I strive to push boundaries in design and technology.
+
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="myimage.jpg" alt=" Photo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio bg-black text-white py-5">
+            <div class="container">
+                <h2 class="text-center display-5 mb-4">Featured Projects</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card bg-dark text-white h-100 card-hover">
+                            <img src="nssf.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h3 class="card-title h4">National Service Scheme (NSS)</h3>
+                                <p class="card-text">My contributions in NSS as a part of Designing Team</p>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#project1Modal">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card bg-dark text-white h-100 card-hover">
+                            <img src="boltf.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h3 class="card-title h4">Bridged Online Learning Toolkit</h3>
+                                <p class="card-text">My contributions in Project BOLT as official Designer</p>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#project2Modal">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card bg-dark text-white h-100 card-hover">
+                            <img src="sdcf.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h3 class="card-title h4">Student Developers Community</h3>
+                                <p class="card-text">My contributions in SDC as Designing Lead</p>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#projectSDCModal">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card bg-dark text-white h-100 card-hover">
+                            <img src="gbtf.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h3 class="card-title h4">Global Beauty Treasure (GBT & GHT)</h3>
+                                <p class="card-text">My Designs for GBT as Social Media Designing Intern.</p>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#projectGBTModal">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact bg-dark text-white py-5">
+            <div class="container">
+                <h2 class="text-center display-5 mb-4">Contact Me</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">National Service Scheme</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img src="ramadan_nss (3).jpg" class="img-fluid" alt="Design 1">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="water_day (1).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="nsswbposter.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="environmentday copy.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="summerBlue_nss.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="sankranthiposterd.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="covid19curejpg.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="covid19prevjpg.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="covid19symjpg.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="firesafety_awareness.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="harithaharam_nss(1).jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Project Title 2</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <a href="https://www.figma.com/proto/3rHo4vbHAepNmwB6z0CkEJ/project_bolt?node-id=458-1271&t=RV6SW7rdeIWjCNqX-1&scaling=min-zoom&content-scaling=fixed&page-id=458%3A1269&starting-point-node-id=458%3A1271&show-proto-sidebar=1" target="_blank"><h3>Click to View my Project</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project SDC Modal -->
+    <div class="modal fade" id="projectSDCModal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Student Developers Community</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img src="Python_sdc1.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="TECHKNOW (3).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="ramanavami_sdc.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="Tutorial.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="techknowthon.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="uxplosion.png" class="img-fluid" alt="Design 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectGBTModal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Student Developers Community</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img src="mumbai (1).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="mumbainew.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="kirti (1).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbtdubai.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="Explore The World (1).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbt_finale.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="GLOBAL BEAUTY TREASURE.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbtbenefits.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbtbenefits_male.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="GBT_RO.jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbt_ramadan.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="GBTDUBAI2.png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="gbt(3).png" class="img-fluid" alt="Design 2">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img src="GBT_ANUSHA(EARLYBIRD).jpg" class="img-fluid" alt="Design 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            this.classList.toggle('collapsed');
+            document.getElementById('navbarNavAltMarkup').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
